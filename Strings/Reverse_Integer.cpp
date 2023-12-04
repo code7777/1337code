@@ -1,3 +1,29 @@
+
+/*
+Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+
+Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+
+Example 1:
+
+Input: x = 123
+Output: 321
+
+Example 2:
+
+Input: x = -123
+Output: -321
+
+Example 3:
+
+Input: x = 120
+Output: 21
+
+Constraints:
+
+    -2^31 <= x <= 2^31 - 1
+
+*/
 #include <typeinfo>
 #include <iostream>
 
@@ -6,10 +32,13 @@
 #include <climits> 
 #include <limits.h>
 #include <limits>
+#include <stdlib.h>  
+
 
 class Solution {
 public:
     int reverse(int x) {
+         /*
         //stringstream  string_object_name;
 
         //string_object_name << x;
@@ -18,15 +47,18 @@ public:
         //cout << typeid(mystring).name() << endl;
         //mystring = to_string(x);
         //  -2^31 <= x <= 2^31 - 1
-        /*
+       
             long value = Long.parseLong(inputString);
         if (value < Integer.MAX_VALUE && value > Integer.MIN_VALUE)
         */
         long y = (long long)x;
         int upper_bound = 2147483647;
         int lower_bound = -2147483648; 
-        cout << upper_bound;
-        cout << lower_bound;
+        string result = "";
+        bool negative = false;
+        //cout << upper_bound << endl;
+        //cout << lower_bound << endl;
+        cout << y;
         
         if( y < lower_bound || y > upper_bound ){
             return 0;
@@ -35,34 +67,37 @@ public:
         mystring = to_string(x);
         cout << " my string is " << mystring << endl;
         int l = mystring.length();
-        // create a new array of chars to copy to (+1 for a null terminator) 
-        char* char_array = new char[l + 1]; 
-           // make sure that the new string is null terminated 
-        char_array[l] = '\0'; 
-        if(x<0){
         
-            for (int i = 0; i <l; i++) 
-            { 
-                char_array[i] = mystring[l -1 - i]; 
-            } 
-            
+        if ( x < 0){
+            l = l-1;
+            negative = true;
         }
         
-        if(l == 10){
-        
-            for (int i = 0; i <l; i++) 
-            { 
-                char_array[i] = mystring[l - i]; 
-            } 
-            
+        cout << "length of string is " << l << endl;
+        int ans[l+1];
+        for(int i = 1; i < l+1; i++){
+            ans[0+ i -1 ]= x % 10;
+            cout <<  ans[0+ i -1 ] << endl;
+            result += to_string(abs(ans[0+ i -1 ]));
+            cout << result << endl;
+            x /= 10;
         }
+    
         
-        int ans = atoi(char_array);
-         if (x<0){
-         ans = -ans;   
+        int fin_ans;
+
+        try {
+        fin_ans = stoi(result);
+        }catch (const std::out_of_range& e) {
+        return 0; // Return 0 in case of overflow
+        }
+
+        cout << "ans is " <<  fin_ans << endl;
+         if (negative == true ){
+         fin_ans = -fin_ans;   
         }
         
         //cout << "String representation of num1: " << mystring << '\n';
-        return ans;
+        return fin_ans;
     }
 };
