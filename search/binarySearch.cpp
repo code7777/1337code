@@ -10,7 +10,8 @@ class Solution {
                 std:: cout << "isOdd is " << isOdd << std::endl;
             }
             if(isOdd){
-                medien = ((size -1)/2)+1;
+                medien = ((size -1)/2)+1; //the true medien is still size/2 but 
+                // we are flooring it to a whole number 
                 /* if target > medien
                 then see if target is 3/4 (in between medien and end)
                 if target < medien 
