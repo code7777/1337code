@@ -99,3 +99,5 @@ public class MyQueue
  * int param_3 = obj.Peek();
  * bool param_4 = obj.Empty();
  */
+
+ // time complexity push O(1) pop O(n) peek O(n) empty o(1)
