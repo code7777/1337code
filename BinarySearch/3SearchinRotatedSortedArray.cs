@@ -31,46 +31,98 @@ All values of nums are unique.
 nums is an ascending array that is possibly rotated.
 -104 <= target <= 104
 */
-
 public class Solution {
     public int Search(int[] nums, int target) {
-        //store ending value
-        // 2 vals left and right indexes
-        // check if mid + 1 is less then ending 
-        // if not left = mid +1 , search again
-    
-        // 
+
         int left = 0;
         int right = nums.Length -1 ;
         int endVal = nums[right];
-        int mid;
+        int mid = left + (right -left);
+
         Console.WriteLine( $"left is: {left} ");
         Console.WriteLine( $"right is: {right}");
-        Console.WriteLine( $"end val is: {endVal}");
-        while (left < right)
-        {
+        //Console.WriteLine( $"end val is: {endVal}");
 
-            mid = left + (right - left) / 2;
-            //simple checks to avoid binary search 
-            if (nums[mid] == target)
-            {
-                return mid;
-            }
-            if (nums[left] == target)
-            {
-                return left;
-            }
-            if (nums[right] == target)
-            {
-                return right;
-            }
+        //first we will address edge cases
 
-            if (nums[mid] > nums[right])
-            {
-                left = mid + 1;
-            }
-            else { right = midpoint -1; }
+        if(nums[left] == target){
+            return left;
         }
+        if(nums[mid] == target){
+            return mid;
+        }
+        if(nums[right] ==target){
+            return right;
+        }
+
+        bool searchLeft = false;
+        bool pivotRight = false;
+        //first find the pivot point
+
+            //if the midpoint is more than the last index, the pivot is on the right
+            // this means the indices to the left side of the midpoint is sorted
+            if(nums[mid] > nums[right]){
+                pivotRight = true;
+                if((target >= nums[left]) && (target < nums[mid])){
+                    // if the target is inbetween the midpoint and first index we can search for target there
+                    searchLeft = true;
+                }
+            }
+
+            //search left of midpoint, left of midpoint is ordered
+            if(searchLeft && pivotRight){
+                right = mid;
+                while(left < right){
+                    mid = left + (right -left);
+                    if(target == nums[mid]){
+                        return mid;
+                    }
+                    if(target > nums[mid]){
+                        left = mid + 1;
+                    }
+                    if(target < nums[mid]){
+                        right = mid -1;
+                    }
+                    if(target == nums[right]){
+                        return right;
+                    }
+                    if(target == nums[left]){
+                        return left;
+                    }
+                }
+            }
+
+            //search right, right of midpoint is ordered
+             if((!searchLeft) && (!pivotRight)){
+                left = mid;
+                while(left < right){
+                    mid = left + (right -left);
+                    if(target == nums[mid]){
+                        return mid;
+                    }
+                    if(target > nums[mid]){
+                        left = mid + 1;
+                    }
+                    if(target < nums[mid]){
+                        right = mid -1;
+                    }
+                    if(target == nums[right]){
+                        return right;
+                    }
+                    if(target == nums[left]){
+                        return left;
+                    }
+                }
+            }
+            /* if the target hasn't been returned yet it's either not in the array or 
+
+                pivot on left, search left
+                pivot on right and search right
+
+                */
+
+
+
         return -1;
     }
 }
