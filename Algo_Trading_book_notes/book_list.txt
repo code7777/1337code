@@ -1,0 +1,51 @@
+Beginning
+
+1 systematic trading -Robert carver
+
+2 trading systems and methods - perry j kaufman (more of a reference)
+
+3 advances in financial machine learning - marcos lopez de prado ( apparently a must read)
+
+Risk Management
+
+The leverage space trading model - vince ( meant to be read cover to cover as a story book) (must read)
+
+mathematics of money management - ralph vince
+
+books for indicators
+
+john f ehlers
+(uses tradestation)
+3 -rocket science for traders
+2 cybernetic analysis for stucks and futures
+ 1 cycle analytics for traders
+
+statistically sound indicators for financial market prediction algos in c++
+- timothy masters
+
+
+books for trading strategies
+
+universial tactics of successful trend trading - brent penfold
+stocks on the move - andreas f clenow
+cybernetic trading strategies - murray a Ruggiero jr (1997)
+
+testing and tuning market trading systems c++ algos - timonthy masters
+permutation and randomization tests for trading system development -
+algorithms in c++ - timothy masters (must read if you want to do data mining trading systems)
+
+not about trading but worth having
+
+numerical recipes - art of scientific computing 3rd edition Press, Teukolsky, vetterling, Flannery
+
+assessing and improving prediction and classification - theory and algorithms in c++ timothy masters
+
+data driven science and engineering machine learning dynamical systems and control 2nd edition - steven l brunton , j Nathan kutz
+
+niche miscellaneous books 
+
+technical analysis for algorithmic pattern recognition - zapranis , tsinaslanidis
+
+detecting regime change in computational finance , data science, machine learning and algo trading - chen , tsang
+
+trading on sentiment - Richard peterson
