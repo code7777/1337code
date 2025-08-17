@@ -1,6 +1,14 @@
+##### sHARPE RATIO
+
+Mean of returns devided by deviation of returns  ( daily, annual etc)
+
 ### Intro
 
 www.systematictrading.org
+
+
+
+
 
 ####  Asset allocating investor
 
@@ -71,7 +79,7 @@ the equity value premium.
 #### Chapter 1 FLAWED HUMAN BRAIN
 
  ##### PG 37 -38 
-Volatility - standard deviation of returns. One uinit of standard deviation is also sometimes called a sigma.
+Volatility - standard deviation of returns. One unit of standard deviation is also sometimes called a sigma.
 
 250 business days in 2025 (According to chat gpt) (In the book they use 256 but I feel like this is innacurate)
 
@@ -212,4 +220,41 @@ a specific asset, for example the yield of a particular bond or the PE ratio of 
 
  ### Part Two Toolbox
 
+##### 8/16 continueing reading  
+lets get the bag!
+
+#### chap 3 fitting
+This entire chapter is about using data to create the trading rules used by
+ staunch systematic traders. It is not necessary reading if you are going to use
+ my framework to make discretionary forecasts as a semi-automatic trader or
+ without any rules at all as an asset allocating investor
+
+decision to run a systematic trading system means you have to select one or more
+ trading rules and discard others as being unworthy. This process is often called
+ fitting.
+
+##### calibration - when u stick to a rule
+
+##### sigma - units away from std dev
+T-test sometimes used with sharpe ratio. Further away mean is from zero (measured in sigma) more likely SR is positive
  
+ #### Chap 4 Portfolio allocation
+
+ chap for staunch systems trader , not for semi-auto trader.
+
+This chapter is about deciding how you share out your trading capital between
+ different instruments or trading rules.
+
+##### bootstraped 
+This involves repeating my optimisation
+ many times over different parts of the data, taking the resulting weights, and averaging
+ them out. So the weights are the average of many optimisations, rather than one
+ optimisation on the average of all data
+
+ ##### handcrafting
+  The procedure involves constructing the portfolio in a bottom-up fashion by first
+ forming groups of similar assets. Within and across groups you set allocations using a
+ table of optimal weights for similar portfolios. These weights come from my own
+ experiments with bootstrapping
+
+ ### Part 3 Framework
