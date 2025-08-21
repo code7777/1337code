@@ -13,6 +13,60 @@
 
 7 Test & reflect
 
+Step 1: Define the Decision
+
+Ask: “Exactly what am I deciding right now?”
+
+Write it in one sentence.
+
+Step 2: List Options (2–5 max)
+
+Include all realistic possibilities.
+
+Example: Lunch → Whole Foods, Panda Express, Panera.
+
+Step 3: Quick Criteria Check (30–60 seconds)
+
+Evaluate each option on 3 criteria:
+
+Goal-aligned (health, work, finances)
+
+Enjoyment / motivation
+
+Feasibility / effort required
+
+Use a simple 1–5 score for each.
+
+Step 4: Time-Box Thinking
+
+Small choices: 2–5 minutes
+
+Medium choices: 5–15 minutes
+
+Big choices: 30–60 minutes
+
+Step 5: Pick & Commit
+
+Choose the option with the best balance.
+
+Write down the choice or say it aloud — commitment reduces second-guessing.
+
+Step 6: Immediate Action
+
+Take the first small step toward that choice. Action = feedback.
+
+Step 7: Reflect Quickly
+
+After the action, ask:
+
+Did this meet my goals?
+
+Did I enjoy it?
+
+Any insight for next time?
+
+Use reflections to adjust future decisions, not to dwell on this one.
+
 ## right choice vs feel good choice
 
 That’s a really insightful distinction — it’s basically **“long-term value vs short-term satisfaction”**. There isn’t a perfect ratio, but here’s a framework that balances both:
