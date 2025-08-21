@@ -258,3 +258,14 @@ This involves repeating my optimisation
  experiments with bootstrapping
 
  ### Part 3 Framework
+
+#### Chap 5 framework overview
+ trading rules are the engine of the system
+
+ trading framework are the chasis
+
+ #### Chap 6 Instruments
+ what you are going to trade - asset class
+
+ understand what makes a market function - eg interest rates,
+ economic moves, corporate profits etc.. esp for ideas first trading
