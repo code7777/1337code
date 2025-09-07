@@ -264,8 +264,26 @@ This involves repeating my optimisation
 
  trading framework are the chasis
 
- #### Chap 6 Instruments
+ read pg 126 - don't trade on pain tolerance, set stops when you think your hypothesis will be wrong
+ -
+ separate out the components of your system: trading rules
+ (including explicit or implicit stop losses), position sizing, and the calculation of your
+ volatility target (the average amount of cash you are willing to risk). You can then
+ design each component independently of the other moving parts
+
+ individual components need to have a well defined interface – a
+ specification describing how they interact with other parts of the system
+
+#### Chap 6 Instruments
  what you are going to trade - asset class
 
  understand what makes a market function - eg interest rates,
  economic moves, corporate profits etc.. esp for ideas first trading
+
+ Don't trade from an ivory tower , have some idea of factors driving in returns. If unusual forces are at play 
+ avoid that instrument.
+
+ Avoid extremely low vol instruments
+ more rules for instruments pg 140
+
+ ### Chap 7 Forecast
