@@ -1,3 +1,9 @@
+# 10/13/2025
+## update :
+    solving more leetcode problems for interview 
+    - need to clean up this repo and put non leetcode stuff in seperate repo
+    - sticking to c++ for leetcode problems for now
+
 # 6/25/2025
 ## update:
     adding algo trading booknotes to this repo

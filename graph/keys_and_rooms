@@ -1,0 +1,29 @@
+class Solution {
+public:
+    bool canVisitAllRooms(vector<vector<int>>& rooms) {
+        int n = rooms.size();             // how many rooms total
+        vector<bool> visited(n, false);   // keep track of visited rooms
+        stack<int> st;
+        st.push(0);                       // start from room 0
+        visited[0] = true;
+
+        while (!st.empty()) {             // while there are rooms left to check
+            int room = st.top();          
+            st.pop();
+
+            // look at all keys in this room
+            for (int key : rooms[room]) { // c++ for range syntax introduced in c++11
+                if (!visited[key]) {      // if we haven't opened this room yet
+                    visited[key] = true;
+                    st.push(key);         // add it to explore later
+                }
+            }
+        }
+
+        // if any room is still unvisited, return false
+        for (bool v : visited)
+            if (!v) return false;
+
+        return true;
+    }
+};

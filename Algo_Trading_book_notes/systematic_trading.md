@@ -287,3 +287,10 @@ This involves repeating my optimisation
  more rules for instruments pg 140
 
  ### Chap 7 Forecast
+
+ forecast – a prediction of how much prices are expected to go up
+ or down
+
+ expected Sharpe ratios make good forecasts
+
+ Forecasts should have a consistent scale
